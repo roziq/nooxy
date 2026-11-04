@@ -4,50 +4,35 @@ import { HEAD_CSS_STRING } from './generated/_head-css-string.js';
 import { HEADER_HTML_STRING } from './generated/_header-html-string.js';
 
 /** @type {import('nooxy').NooxySiteConfig} */
-
+export const SITE_CONFIG = {
   // ============================================================================
   // REQUIRED: Basic Site Configuration
   // ============================================================================
 
   // Your custom domain (without https://)
   // Example: 'example.com' or 'docs.example.com'
-//  domain: 'your-domain.com',
+  domain: 'your-domain.com',
 
   // Map URL slugs to Notion page IDs
   // The '/' slug is your homepage
   // Get page ID from Notion: Share > Copy link > extract the 32-char ID
   // Example: https://notion.so/My-Page-abc123... -> 'abc123...' (32 chars)
-  //slugToPage: {
-    //': 'NOTION_HOME_PAGE_ID',
+  slugToPage: {
+    '/': 'NOTION_HOME_PAGE_ID',
     // '/about': 'NOTION_PAGE_ID',
     // '/contact': 'NOTION_PAGE_ID',
     // Use '/' in slug for nested pages:
     // '/docs/getting-started': 'NOTION_PAGE_ID',
- 
-  export const SITE_CONFIG = {
-  domain: 'roziqun.workers.dev', // Subdomain Cloudflare-mu
-  siteName: 'https://app.notion.com/p/Deputi-Kepegawaian-a09cc2aba87b830787b201d3b2ac70f9',
-  siteDescription: 'Layanan Kepegawaian SMKN 1 Purbalingga',
-  slugToPage: {
-    '/': 'a09cc2aba87b830787b201d3b2ac70f9',
   },
-};
-
-
-
-
-
-
-// },
 
   // Site name displayed in browser tabs and social previews
   // Used for og:site_name meta tag
-//  siteName: 'Your Site Name',
+  siteName: 'Your Site Name',
 
   // Your Notion workspace domain (without https://)
   // Find it in your Notion page URL: https://YOUR-WORKSPACE.notion.site/...
   // This prevents serving unintended Notion content through your domain
- // notionDomain: 'your-workspace.notion.site',
+  notionDomain: 'your-workspace.notion.site',
 
   // ============================================================================
   // OPTIONAL: Social Media & Branding
