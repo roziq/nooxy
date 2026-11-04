@@ -26,7 +26,7 @@ import { HEADER_HTML_STRING } from './generated/_header-html-string.js';
  
   export const SITE_CONFIG = {
   domain: 'roziqun.workers.dev', // Subdomain Cloudflare-mu
-  //siteName: 'Deputi Kepegawaian',
+  siteName: 'https://app.notion.com/p/Deputi-Kepegawaian-a09cc2aba87b830787b201d3b2ac70f9',
   siteDescription: 'Layanan Kepegawaian SMKN 1 Purbalingga',
   slugToPage: {
     '/': 'a09cc2aba87b830787b201d3b2ac70f9',
