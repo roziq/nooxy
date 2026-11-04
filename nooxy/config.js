@@ -4,7 +4,7 @@ import { HEAD_CSS_STRING } from './generated/_head-css-string.js';
 import { HEADER_HTML_STRING } from './generated/_header-html-string.js';
 
 /** @type {import('nooxy').NooxySiteConfig} */
-/export const SITE_CONFIG = {
+
   // ============================================================================
   // REQUIRED: Basic Site Configuration
   // ============================================================================
