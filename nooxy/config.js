@@ -42,12 +42,12 @@ import { HEADER_HTML_STRING } from './generated/_header-html-string.js';
 
   // Site name displayed in browser tabs and social previews
   // Used for og:site_name meta tag
-  siteName: 'Your Site Name',
+//  siteName: 'Your Site Name',
 
   // Your Notion workspace domain (without https://)
   // Find it in your Notion page URL: https://YOUR-WORKSPACE.notion.site/...
   // This prevents serving unintended Notion content through your domain
-  notionDomain: 'your-workspace.notion.site',
+ // notionDomain: 'your-workspace.notion.site',
 
   // ============================================================================
   // OPTIONAL: Social Media & Branding
