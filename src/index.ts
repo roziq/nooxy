@@ -11,8 +11,16 @@
  * Learn more at https://developers.cloudflare.com/workers/
  */
 
+import { initializeNooxy } from 'nooxy';
+import { SITE_CONFIG } from '../nooxy/config';
+
+const proxy = initializeNooxy(SITE_CONFIG);
+
 export default {
-	async fetch(request, env, ctx): Promise<Response> {
-		return new Response("Hello World!");
-	},
-} satisfies ExportedHandler<Env>;
+  async fetch(request: Request): Promise<Response> {
+    return proxy(request);
+  }
+};
+
+
+
