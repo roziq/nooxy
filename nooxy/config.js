@@ -18,7 +18,7 @@ import { HEADER_HTML_STRING } from './generated/_header-html-string.js';
   // Get page ID from Notion: Share > Copy link > extract the 32-char ID
   // Example: https://notion.so/My-Page-abc123... -> 'abc123...' (32 chars)
   //slugToPage: {
-    '/': 'NOTION_HOME_PAGE_ID',
+    //': 'NOTION_HOME_PAGE_ID',
     // '/about': 'NOTION_PAGE_ID',
     // '/contact': 'NOTION_PAGE_ID',
     // Use '/' in slug for nested pages:
